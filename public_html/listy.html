@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="utf-8" />
+   <title>Listy w HMTL-u</title>
+   <style>
+      #menu li {
+          display: inline; 
+          padding-left: 20px;
+          margin-left: 10px;
+          } 
+          
+          .lista-abc {
+                list-style-type: lower-alpha; 
+              }
+        .lista-kwadrat {
+            list-style-type: square;
+            }
+          
+          
+   </style>
+</head>
+
+<body>
+    
+    <div id="menu">
+            <ul>
+                <li><a href="index.html" >Start</a></li>
+                <li><a href="tabele.html">Tabele</a></li>
+            </ul>
+    </div>
+
+  <h1>Zasady stosowania list</h1>
+  
+  <h2>Listy wypunktowane</h2>
+   
+  <ul class="lista-kwadrat"> 
+    <li>element listy</li>
+    <li>element listy</li>
+    <li>element listy</li>
+    <li>element listy</li>
+    <li>
+       <ol>
+            <li>element zagnieżdżony</li>
+            <li>element zagnieżdżony</li>
+            <li>element zagnieżdżony</li>
+       </ol>
+    </li>
+  </ul>
+  
+  <h2>Listy numerowane</h2>
+
+  <ol class="lista-abc">
+    <li>element listy</li>
+    <li>element listy</li>
+    <li>element listy</li>
+    <li>element listy</li>
+  </ol>
+  
+
+</body>
+
+</html>
