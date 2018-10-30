@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   selektoryCSS.html
+   
+-->
+
+<head>
+<meta charset="utf-8" />
+<title>bez nazwy</title>
+<meta name="generator" content="Geany 1.32" />
+
+<style>
+    html { font-size: 15pt; }
+    
+    /* cyfry HEX 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f */
+    #element { border: 2px solid green; }
+    /* 0,1,0,0 */
+    .ramka { border: 2px solid #1A42E8; }
+    /* 0,0,1,0 */
+    div ul ul li {
+        border: 2px solid #E81A25;
+        background-color: #ccc;
+        padding: 10px 40px 20px 5px;
+        margin: 5%;
+    }
+    /* top right bottom left */
+    /* 0,0,0,4 */
+    
+    h2 { font-size: 1.5rem; }
+    
+</style>
+
+</head>
+
+<body>
+    
+    <div class="naglowek">
+        <h2>Nagłówek mojej strony</h2>
+    </div>
+    
+    <div>
+        <ul>
+            <li>
+                <ul>
+                    <li>element listy na górze</li>
+                    <li id="element" class="ramka" style="border-color: black;">
+                        elemen listy zagnieżdżonej
+                    </li>
+                    <li>element listy na dole</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
