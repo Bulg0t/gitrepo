@@ -6,7 +6,7 @@
 def cw1():
     suma = 0
     liczba = int(input('Podaj liczbę: '))
-    while suma<75:
+    while suma <= 75:
         suma += liczba
         print(suma)
         liczba = int(input('Podaj liczbę: '))
@@ -27,12 +27,8 @@ def cw2():
 def cw3():
     n = 0 
     m = int(input('Podaj ostatnią liczbę: '))
-    kwadrat = 0
-    for kwadraty in range(n, m + 1):
-        kwadrat = kwadraty**2
-        
-        
-    print(m,  kwadrat)
+    for i in range(m + 1):
+        print(i*i)
     return " "
 
 
