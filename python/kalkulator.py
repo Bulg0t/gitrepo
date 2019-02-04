@@ -38,11 +38,27 @@ def main(args):
     while True:
         d = input(''' Wybierz działanie ''')
         if d == '+':
-            pass
+            a = pobierz_liczbe( 'Podaj składnik: ')
+            b = pobierz_liczbe( 'Podaj składnik: ')
+            if a and b:
+                wynik = a + b
+                if wynik:
+                    print('{} + {} = {}' .format(a, b, wynik))
         elif d == '-':
-            pass
+            a = pobierz_liczbe( 'Podaj odejmną: ')
+            b = pobierz_liczbe( 'Podaj odejmnik: ')
+            if a and b:
+                wynik = a - b
+                if wynik:
+                    print('{} - {} = {}' .format(a, b, wynik))
         elif d == '*':
-            pass
+            a = pobierz_liczbe( 'Podaj czynnik: ')
+            b = pobierz_liczbe( 'Podaj czynnik: ')
+            if a and b:
+                wynik = a * b
+                if wynik:
+                    print('{} * {} = {}' .format(a, b, wynik))
+            
         elif d == '//':
             pass
         elif d == '/':
@@ -65,7 +81,7 @@ def main(args):
         elif d == 'l':
             pokaz_liste()
         elif d == 'koniec':
-            pass 
+            pass
         else:
             print('Błędny wybór!')
 
