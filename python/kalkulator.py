@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 #
 #  kalkulator.py
+from math import sin , cos, pi
 
 def pokaz_liste():
     print('''Lista działań:
@@ -30,8 +31,21 @@ def dziel(a, b):
     if b != 0:
         return a / b
     else:
-        print('Błąd dzielenia przez zero!')
+        print("Błąd dzielenia przez zero!")
         return False
+        
+def sinus(stopien):
+    if -1 < stopien < 361:
+        
+        return sin(stopien * pi / 180)
+    print("Błędny zakres stopni!")
+    return False
+    
+def cosinus(stopien):
+    if -1 < stopien < 361:
+        return cos(stopien * pi / 180)
+    print("Błędny zakres stopni!")
+    return False
 
 def main(args):
     pokaz_liste()
@@ -58,9 +72,6 @@ def main(args):
                 wynik = a * b
                 if wynik:
                     print('{} * {} = {}' .format(a, b, wynik))
-            
-        elif d == '//':
-            pass
         elif d == '/':
             a = pobierz_liczbe( 'Podaj dzielną: ')
             b = pobierz_liczbe( 'Podaj dzielnik: ') 
@@ -68,6 +79,8 @@ def main(args):
                 wynik = dziel(a, b)
                 if wynik:
                     print('{} / {} = {}' .format(a ,b, wynik))
+        elif d == '//':
+            pass
         elif d == '%':
             pass 
         elif d == '^':
@@ -75,9 +88,13 @@ def main(args):
         elif d == '!':
             pass 
         elif d == 'sin':
-            pass 
+            a = pobierz_liczbe('Podaj kąt w stopniach: ')
+            if not isinstance(a, (bool)):
+                print('sin({}) = {}' .format(a, sinus(a)))
         elif d == 'cos':
-            pass 
+            a = pobierz_liczbe('Podaj kąt w stopniach: ')
+            if not isinstance(a, (bool)):
+                print('cos({}) = {}' .format(a, cosinus(a)))
         elif d == 'l':
             pokaz_liste()
         elif d == 'koniec':
