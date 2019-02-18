@@ -17,12 +17,17 @@ def fib_it(n):
     a, b, wynik = 0, 1, 0
     
     for i in range(2, n + 1):
-        if a > 0:
-            print("{}/{} = {}" .format(b, a, b / a))
+        #if a > 0:
+            #print("{}/{} = {}" .format(b, a, b / a))
         wynik = a + b
         a, b = b, wynik
         
     return wynik
+    
+def fib_rek(n):
+    if n < 2:
+        return n
+    return fib_rek(n - 1) + fib_rek(n - 2)
         
 
 
@@ -37,7 +42,7 @@ def main(args):
         print('Błędne dane!')
         n = input('Który wyraz ciągu? ')
     
-    print("F_it({}) = {}" .format(n, fib_it(int(n))))
+    print("F_rek({}) = {}" .format(n, fib_rek(int(n))))
     
     return 0
 
