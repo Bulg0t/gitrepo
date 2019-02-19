@@ -32,17 +32,17 @@ def fib_rek(n):
 
 
 def main(args):
-    #assert fib_it(0) == 0
-    #assert fib_it(1) == 1 
-    #assert fib_it(10) == 55
-    #assert fib_it(16) == 987
-    assert fib_it(19) == 4181
+    assert fib_rek(0) == 0
+    assert fib_rek(1) == 1 
+    assert fib_rek(10) == 55
+    assert fib_rek(16) == 987
+    assert fib_rek(19) == 4181
     n = input('Który wyraz ciągu? ')
     while not czy_naturalna(n):
         print('Błędne dane!')
         n = input('Który wyraz ciągu? ')
     
-    print("F_rek({}) = {}" .format(n, fib_rek(int(n))))
+    print("F_rek({}) = {}" .format(n, fib_it(int(n))))
     
     return 0
 
