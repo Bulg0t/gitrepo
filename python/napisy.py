@@ -61,8 +61,8 @@ def pobierz_dane3():
     
 def main(args):
     #pobierz_dane1()
-    #pobierz_dane2()
-    pobierz_dane3()
+    pobierz_dane2()
+    #pobierz_dane3()
     return 
 
 if __name__ == '__main__':
