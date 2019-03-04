@@ -18,12 +18,13 @@ def szyfruj_1(tekst, klucz):
         ascii = ord(znak)
         if ascii + klucz > 122:
             znak = chr(ascii+ klucz - 26)
-        elif:
-            
-            
+        elif chr(ascii + klucz) == '#':
+            znak = chr(ascii)
+        
+        
         else:
             znak = chr(ascii + klucz) #przeformulowac, czy znak jest spacją
-        szyfrogram += znak, 
+        szyfrogram += znak 
     print('Szyfrogram:\n',szyfrogram)
     
 
