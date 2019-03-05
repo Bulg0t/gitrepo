@@ -29,7 +29,12 @@ def main(args):
     teksty = czytaj_dane('dane01.txt')
     print(teksty)
     ile = 0
-    for
+    for i in range (teksty[i]):
+        if czy_palindrom(teksty):
+            ile += 1
+        else:
+            continue
+    print(ile)
     # ~if czy_palindrom(tekst):
         # ~print('To palindrom')
     # ~else:
