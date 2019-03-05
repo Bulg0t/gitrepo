@@ -29,8 +29,8 @@ def main(args):
     teksty = czytaj_dane('dane01.txt')
     print(teksty)
     ile = 0
-    for i in range (teksty[i]):
-        if czy_palindrom(teksty):
+    for i in range (len(teksty)):
+        if czy_palindrom(teksty[i]):
             ile += 1
         else:
             continue
