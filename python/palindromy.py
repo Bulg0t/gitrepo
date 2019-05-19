@@ -21,7 +21,7 @@ def czytaj_dane(plik):
     with open(plik, "r") as f:
         for wiersz in f:
             teksty.append(wiersz.strip())
-        return teksty
+    return teksty
             
             
 def main(args):
@@ -29,7 +29,15 @@ def main(args):
     teksty = czytaj_dane('dane01.txt')
     print(teksty)
     ile = 0
-    for
+    for i in range (len(teksty)):
+        if czy_palindrom(teksty[i]):
+            ile += 1
+        else:
+            continue
+
+    print(ile)
+
+    
     # ~if czy_palindrom(tekst):
         # ~print('To palindrom')
     # ~else:
