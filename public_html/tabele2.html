@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Zaawansowane opcje tabel w HTML</title>
+    <style>
+        table, th, td {
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Zaawansowane opcje tabel w HTML</h1>
+    
+    <table>
+        <tr>
+            <th rowspan="2">Nazwisko</th>
+            <th colspan="2">Telefon</th>
+        </tr>
+        <tr>
+            <td>służbowy</td>
+            <td>prywatny</td>
+        </tr>
+        <tr>
+            <td>Linus Torvalds</td>
+            <td>5076843</td>
+            <td>7076843</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
