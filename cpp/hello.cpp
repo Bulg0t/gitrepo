@@ -28,7 +28,7 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-	cout << "Koksownik koks";
+	cout << "Koksownikkoks";
 	return 0;
 }
 
