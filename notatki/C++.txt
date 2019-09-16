@@ -1,0 +1,58 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-09T09:04:49+02:00
+
+====== C++ ======
+
+https://gist.github.com/lo1cgsan
+
+**C++** – wymaga deklaracji typu zmiennej.
+**int** – liczby całkowite.
+**float** – liczby ułamkowe.
+Jak chcemy cos wyswietlic uzywamy **""** - oznacza on ciąg znaków, stała zapisowa. Gdy chcemy dodac kolejny tekst uzywamy <<.
+Każda instrukcja kończy się **;**
+Do pobierania używa się funkcji **cin >>**. Operator wyprowadzania to **cout <<**.
+**Kompilacja** to 1 etap uruchomienia Używamy **F8** lub  **Zbuduj/Compile**.
+Podczas Kompilowania tworzony jest plik obiektowy o rozszerzeniu **".o"   **Kod napisany w c++ osobnie kompilujemy w windowsie lub macosie.
+**Linkowanie** **F9**, **Zbuduj / Build**, to łączenie kodu z bibliotekami systemowymi i w efekcie powstaje plik wykonywalny (najcześciej z rozszerzeniem **".exe"**).
+Uruchomienie F5.
+int i; //Deklaracja
+int = 0; //Inicjacja
+int i = 0; //DEKLARACJA I INICJACJA = definicja
+**<< endl;** - drukuje koniec wiersza
+**Błędy i ostrzeżenia kompilatora :** 
+error : expected initializer... - **nie ma średnika**
+warning : unused variable - nieużywana zmienna.
+error : expected ';' before 'return'
+error : expected '}' at end of input.
+error : no match for operator.
+error : expected initializer before cout. - nie ma **<<**  przed **cout**.
+error: ‘i’ was not declared in this scope – "i" nie jest zdefiniowane. 
+
+===== Uruchamianie programu : =====
+F8, F9, F5
+Pary otwarcie-zamknięcie: "", '', (), {}, [].
+
+===== Specyfikacja algorytmu : =====
+1) Zadanie
+2) dane wejściowe i ich typy
+3) Właściwy algorytm: lista kroków.
+4) dane wyjściowe i ich typy lub postać
+ 
+
+===== Pętle =====
+
+==== for ====
+Pętla w c++ składa się z 3 części.
+1) początkowa wartość zmiennej iteracyjnej int **i=0** lub **i=0**
+2)Ile razy pętla ma się wykonać (dopóki) **i < 10**
+3) **i++** - inkrementacja zmiennej powiększenie o 1. **i--** – dekrementacja, czyli pomniejszenie zmiennej o 1. **i =+ 2** – inkrementacja o 2
+4) Przykład :  for(int i=0;i < 10; i++)
+5) Zmienna i jest deklarowana  w pętli for, więc ta zmienna jest ważna tylko w zakresie tej pętli. Zakres pętli wyznaczają zawiasy {}. Jak wyjdziemy z pętli for nie możemy odwołać się do zmiennej, ponieważ wyskakuje błąd error: ‘i’ was not declared in this scope. Aby to naprawić deklarujemy zmienną przed pętlą.
+
+==== while ====
+int i; //Deklaracja
+int i = 0; //DEKLARACJA I INICJACJA 
+
+
+

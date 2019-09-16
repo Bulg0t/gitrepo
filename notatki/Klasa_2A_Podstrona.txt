@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-11T09:09:18+02:00
+
+====== Klasa 2A Podstrona ======
+Created środa 11 września 2019
+
+1)Dostosowanie wyglądu strony.
+2) CDN - Content Delivery Network.
+Viewport to dostępna szerokość ekranu dla urządzenia
+Układ responsywny CTRL+SHIFT+M
+Bootstrap 4 Template :  https://www.w3schools.com/bootstrap4/ Try it Yourself!
+Znacznik <nav> służy do dodania menu głównego.
+Przekształcenie kodu w komentarz w Sublime **CTRL + /**
+HTML + JS + CSS Pretify
+
