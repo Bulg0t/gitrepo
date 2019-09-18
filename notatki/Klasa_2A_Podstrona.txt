@@ -14,3 +14,17 @@ Znacznik <nav> służy do dodania menu głównego.
 Przekształcenie kodu w komentarz w Sublime **CTRL + /**
 HTML + JS + CSS Pretify
 
+**overflow**  - sposób w jaki może wyświetlać się zawartość. np. scroll, visible, hidden, auto
+**viewport** -  dostępna szerokość ekranu.
+**row** - wiersz
+**col** - kolumna
+**span** - pozwala kolorować tekst
+Klasy **bg** oznaczają background.
+**BORDER** - obramowanie
+**PADDING** - odstęp od treści
+**Content** - zawartość.
+Elementem **root** jest najczęściej samo HTML.
+
+===== Jednostki względne: =====
+**em** - opisuje wielkość względną większą/mniejszą o 2 razy od rozmiaru "rodzica"
+rem - 
