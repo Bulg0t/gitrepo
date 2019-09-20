@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 	cin >> a;
 	cout << "Podaj długość drugiego boku: ";
 	cin >> b;
-	cout << "Podaj długość najdłuższego boku: ";
+	cout << "Podaj długość trzeci boku: ";
 	cin >> c;
 	if (a + b <= c) { 
 	cout << "Na tych bokach nie możesz zbudować trójkąta";
@@ -33,6 +33,12 @@ int main(int argc, char **argv)
 	cout << "Na tych bokach możesz zbudować trójkąt";
 }
 	if (c == sqrt(a*a + b*b)) {
+	cout << "Trójkąt jest prostokątny";
+}
+	if (a == sqrt(b*b + c*c)) {
+	cout << "Trójkąt jest prostokątny";
+}
+	if (b == sqrt(c*c + a*a)) {
 	cout << "Trójkąt jest prostokątny";
 }
 	return 0;
