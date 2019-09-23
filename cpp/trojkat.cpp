@@ -1,4 +1,4 @@
-/*
+,/*
  * trojkat.cpp
  * Napisz program, który pobiera od użytkownika 3 liczby, długości boków 
  *  i sprawdza, czy da się z nich zbudować trójkąt.
@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 	cout << "Na tych bokach nie możesz zbudować trójkąta"; 
 }
 	else {
-	cout << "Na tych bokach możesz zbudować trójkąt";
+	cout << "Na tych bokach możesz zbudować trójkąt" <<endl;
 }
 	if (c == sqrt(a*a + b*b)) {
 	cout << "Trójkąt jest prostokątny";
