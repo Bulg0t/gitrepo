@@ -24,7 +24,28 @@ Klasy **bg** oznaczają background.
 **PADDING** - odstęp od treści
 **Content** - zawartość.
 Elementem **root** jest najczęściej samo HTML.
+**?** - służy do doklejania danych, dodatkowe zmienne przesyłane do serwera.
+**&** - oddziela zmienne.
+W linku **+** oznacza spację.
+**Validacja** – sprawdzanie poprawności.
+
+===== Formularz: =====
+Metoda **GET** - nie koduje. Jeżeli formularz przesyła wrazliwe dane, nie używamy **GET**. Np. W wyszukiwarce możemy stosować **GET**
+**form** - służy do tworzenia formularza.Klikamy TAB do uzupełnienia.
+można mu nadać atrybuty **action**, **method**, **name** i **id.**
+Każde pole opisuje się etykietą **label, **ma ono atrybuty for.
+Pole wywołujemy **input**, ma ono **typy** i **nazwę**. Najczęściej wykorzystywany jest typ tekstowy, ponieważ jest on uniwersalny. Pola muszą być nazywane, formularz nie musi.
+Nadawanie **id** może być potrzebne w skrypcie.
+Formularz musi mieć co najmniej jedno pole i co najmniej jeden przycisk.
+Przycisk to też znacznik input, ale typ ustawiamy na submit. Przyciskowi dajemy atrybut **value **- wartość, co oznacza wyświetlanie tekstu  na przycisku.
+Aby oddzielić pola zamiast **<br>** używamy **div**a z klasą **form-group.**
+Do przycisku aby go oddzielić do innej linii dodajemy klasę **btn** i wygląd **btn-primary**.
+Klasa **form-control** pozwala na zajęcie całej szerokości na stronie przez pole.
+Żeby wskazać, że pole jest **wymagane** dodajemy do pola atrybut **required = "required"**
 
 ===== Jednostki względne: =====
 **em** - opisuje wielkość względną większą/mniejszą o 2 razy od rozmiaru "rodzica"
 rem - 
+
+
+

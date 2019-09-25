@@ -28,6 +28,8 @@ error : expected '}' at end of input.
 error : no match for operator.
 error : expected initializer before cout. - nie ma **<<**  przed **cout**.
 error: ‘i’ was not declared in this scope – "i" nie jest zdefiniowane. 
+**&&** - logiczny operator koniunkcji
+**||** - logiczny operator alternatywy.
 
 ===== Uruchamianie programu : =====
 F8, F9, F5
