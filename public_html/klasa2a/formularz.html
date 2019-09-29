@@ -39,7 +39,9 @@
                 </h1>
                 <hr>
 
-<form action="formularz.html" method="GET" name="dane" id="name" required="required">
+<form action="formularz.html" method="POST" name="dane" id="name" required="required">
+
+    <input type="hidden" name="id_user" value="10">
 
     <div class="form-group">
     <label for="login">Login:</label>
@@ -55,7 +57,44 @@
     <label for="haslo">Haslo:</label>
     <input type="password" name="haslo" id="haslo" class="form-control" required="required">
     </div>
+    <label for="radio" class="form-check-label">Wybierz płeć: </label>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="plec" value="m" id="radio1">
+    <label class="form-check-label" for="radio1">Mężczyzna</label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="plec" value="k" id="radio2">
+    <label class="form-check-label" for="radio2">Kobieta</label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="plec" value="n" id="radio3" checked>
+    <label class="form-check-label" for="radio3">Odmowa</label>
+    </div>
+
+    <label>Wybierz dodatki:</label>
+    <div class="form-check">
+    <input class="form-check-input"type="checkbox" name="Dodatek1" value="d1" id="dodatek1">
+    <label class="form-check-label" for="dodatek1">Dodatek1</label>
+    </div>
+
+
+    <div class="form-check">
+    <input class="form-check-input"type="checkbox" name="Dodatek2" value="d2" id="dodatek2">
+    <label class="form-check-label" for="dodatek2">Dodatek2</label>
+    </div>
+
+<label>Wybierz płeć z listy:</label>
+<select name="plec2"class="form-control">
+    <option value="m">Mężczyzna</option>   
+    <option value="k">Kobieta</option>  
+    <option value="n" selected>Odmowa</option>  
+
+
+</select>
+
+    
     <input type="submit" value = "Wyślij" class="btn btn-primary">
+
 
 </form>
             </div>

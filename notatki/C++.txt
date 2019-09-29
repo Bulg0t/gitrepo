@@ -45,7 +45,7 @@ Pary otwarcie-zamknięcie: "", '', (), {}, [].
 ===== Pętle =====
 
 ==== for ====
-Pętla w c++ składa się z 3 części.
+Pętla **for** w c++ składa się z 3 części.
 1) początkowa wartość zmiennej iteracyjnej int **i=0** lub **i=0**
 2)Ile razy pętla ma się wykonać (dopóki) **i < 10**
 3) **i++** - inkrementacja zmiennej powiększenie o 1. **i--** – dekrementacja, czyli pomniejszenie zmiennej o 1. **i =+ 2** – inkrementacja o 2

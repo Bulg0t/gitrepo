@@ -42,6 +42,9 @@ Aby oddzielić pola zamiast **<br>** używamy **div**a z klasą **form-group.**
 Do przycisku aby go oddzielić do innej linii dodajemy klasę **btn** i wygląd **btn-primary**.
 Klasa **form-control** pozwala na zajęcie całej szerokości na stronie przez pole.
 Żeby wskazać, że pole jest **wymagane** dodajemy do pola atrybut **required = "required"**
+Atrybut **radio**  **w inpucie** pozwala na wybieranie jednej opcji w formularzu np. płci.
+Atrybut **checkbox w inpucie** pozwala na wybieranie kilku opcji np. Dodatek 1 i Dodatek 2. Checkboxy muszą mieć inne nazwy.
+**Select** działa tak samo jak **radio**. Nazwa się nie może powtórzyć w kontrolkach.Jeśli chcemy aby opcja była wybrana z góry wybieramy atrybut **selected**.
 
 ===== Jednostki względne: =====
 **em** - opisuje wielkość względną większą/mniejszą o 2 razy od rozmiaru "rodzica"
