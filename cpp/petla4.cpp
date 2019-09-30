@@ -9,8 +9,7 @@
 using namespace std;
 int main(int argc, char **argv)
 {
-    int i =10;
-    for(int i=10; i<100; i++)
+    for(int i=10; i<100; i+=2)
     if (i%3 == 0){
      { cout << i << endl; }
 }
