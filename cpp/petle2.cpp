@@ -60,11 +60,11 @@ void choinka(int x){
 }
 
 
+
 int main(int argc, char **argv)
 {
 	prostokat1(5, 12);
 	cout << endl;
-	
 	int a, b;
 	char znak;
 	cout << "Podaj rozmiar x, y; ";
