@@ -33,6 +33,7 @@ W linku **+** oznacza spację.
 Metoda **GET** - nie koduje. Jeżeli formularz przesyła wrazliwe dane, nie używamy **GET**. Np. W wyszukiwarce możemy stosować **GET**
 **form** - służy do tworzenia formularza.Klikamy TAB do uzupełnienia.
 można mu nadać atrybuty **action**, **method**, **name** i **id.**
+**Action** - oznacza do jakiego pliku mają być przesyłane dane.
 Każde pole opisuje się etykietą **label, **ma ono atrybuty for.
 Pole wywołujemy **input**, ma ono **typy** i **nazwę**. Najczęściej wykorzystywany jest typ tekstowy, ponieważ jest on uniwersalny. Pola muszą być nazywane, formularz nie musi.
 Nadawanie **id** może być potrzebne w skrypcie.
@@ -50,5 +51,9 @@ Atrybut **checkbox w inpucie** pozwala na wybieranie kilku opcji np. Dodatek 1 i
 **em** - opisuje wielkość względną większą/mniejszą o 2 razy od rozmiaru "rodzica"
 rem - 
 
+
+Serwer php:
+serwer php tworzymy w terminalu przez komendę **php -S localhost:8000.**
+Serwery www szukają pliku **index.html**, a później **index.php**, a później coś innego co może być skonfigurowane.
 
 

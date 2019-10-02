@@ -20,7 +20,8 @@ int i; //Deklaracja
 int = 0; //Inicjacja
 int i = 0; //DEKLARACJA I INICJACJA = definicja
 **<< endl;** - drukuje koniec wiersza
-**Błędy i ostrzeżenia kompilatora :** 
+
+===== Błędy i ostrzeżenia kompilatora : =====
 error : expected initializer... - **nie ma średnika**
 warning : unused variable - nieużywana zmienna.
 error : expected ';' before 'return'
@@ -30,6 +31,12 @@ error : expected initializer before cout. - nie ma **<<**  przed **cout**.
 error: ‘i’ was not declared in this scope – "i" nie jest zdefiniowane. 
 **&&** - logiczny operator koniunkcji
 **||** - logiczny operator alternatywy.
+Biblioteka <**iomanip**> służy do używania manipulacji wiersza.
+
+===== Funkcje: =====
+**void** - oznacza wykonanie operacji, ale nic nie zwraca. Po void nazywamy funkcję. Każda funkcja musi miec po nazwie nawiasy (). Jak nawiasów nie ma, to jest to zmienna.
+W nawiasach podajemy zmienne z ich typami np. **int** i. 
+
 
 ===== Uruchamianie programu : =====
 F8, F9, F5
