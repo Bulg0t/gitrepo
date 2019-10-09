@@ -20,8 +20,7 @@ int i; //Deklaracja
 int = 0; //Inicjacja
 int i = 0; //DEKLARACJA I INICJACJA = definicja
 **<< endl;** - drukuje koniec wiersza
-
-===== Błędy i ostrzeżenia kompilatora : =====
+**Błędy i ostrzeżenia kompilatora :** 
 error : expected initializer... - **nie ma średnika**
 warning : unused variable - nieużywana zmienna.
 error : expected ';' before 'return'
@@ -31,12 +30,24 @@ error : expected initializer before cout. - nie ma **<<**  przed **cout**.
 error: ‘i’ was not declared in this scope – "i" nie jest zdefiniowane. 
 **&&** - logiczny operator koniunkcji
 **||** - logiczny operator alternatywy.
-Biblioteka <**iomanip**> służy do używania manipulacji wiersza.
 
-===== Funkcje: =====
-**void** - oznacza wykonanie operacji, ale nic nie zwraca. Po void nazywamy funkcję. Każda funkcja musi miec po nazwie nawiasy (). Jak nawiasów nie ma, to jest to zmienna.
-W nawiasach podajemy zmienne z ich typami np. **int** i. 
 
+void nazwafunkcji (ew.parametry){
+zmienne lokalne
+ciało funkcji;
+}
+przekazywanie argumentów przez wartość(by value) tworzy kopie tego co dostaje dodaje kolejna zmienna lokalna
+
+przekazywanie argumentów przez referencje -
+
+jeśli w funckji jest zdefiniwane a, jest to zmienna lokalna i w funkcji głownej podsstawianie pod a, nie będzie  miało znaczenia, gdyż jest ona lokalna, ale w innaczej 
+
+& - przekazyawnie referencji powoduje, żefunkcja ma dostęp do innych lokalnych
+jeśli podamy w nawiasie funckji mod(int &z)
+		z = 1000
+		natomiast w main 
+		mod( a)
+		powoduje, że funcja nadpisuje w pamięci zmiennych lokalnych zamiast tworzyć nowe (zmienia wartość a, zamiast dodawać kolejną) nie jest to adres, tylko udestępnia ją do odyfikacji
 
 ===== Uruchamianie programu : =====
 F8, F9, F5
@@ -61,7 +72,8 @@ Pętla **for** w c++ składa się z 3 części.
 
 ==== while ====
 int i; //Deklaracja
-int i = 0; //DEKLARACJA I INICJACJA 
+int i = 0; //DEKLARACJA I INICJACJA
+
 
 
 

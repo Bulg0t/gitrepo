@@ -46,14 +46,31 @@ Klasa **form-control** pozwala na zajęcie całej szerokości na stronie przez p
 Atrybut **radio**  **w inpucie** pozwala na wybieranie jednej opcji w formularzu np. płci.
 Atrybut **checkbox w inpucie** pozwala na wybieranie kilku opcji np. Dodatek 1 i Dodatek 2. Checkboxy muszą mieć inne nazwy.
 **Select** działa tak samo jak **radio**. Nazwa się nie może powtórzyć w kontrolkach.Jeśli chcemy aby opcja była wybrana z góry wybieramy atrybut **selected**.
+Jesli chcemy ograniczyć rozmiar to uzywamy deklaracji **size="liczba".**
+Funkcja **strlen() **służy do wyznaczania długości wpisywanych znaków.
+Funkcja **substr()** potrzebuje sting, liczby z której startuje i długości.
+ **trim**-usuwa spacje z początku i końca.
+Encja to specjalny kod symbolizujący znak.
+ **htmlspecjarchars** - koduje znaki specjalne
 
 ===== Jednostki względne: =====
 **em** - opisuje wielkość względną większą/mniejszą o 2 razy od rozmiaru "rodzica"
 rem - 
 
 
-Serwer php:
+===== Serwer php: =====
 serwer php tworzymy w terminalu przez komendę **php -S localhost:8000.**
 Serwery www szukają pliku **index.html**, a później **index.php**, a później coś innego co może być skonfigurowane.
+=====terminal====
+ php -S localhost:8000
+ Każdy serwer php zaczyna się od pliku index.php
+To swojej nazwy logujemy się za pomocą localhost: na pasku adresu lub za pomocą ip 127.0.0.1
+ 
+ wszystkie dane post przesyłane z formularza są przesyłane jako tekst(nawet liczby czy spacje)
+ jest to wazne, jeżeli chcemy bronić się przed hackerami, aby nie mogli oszukać przeszuakć hasłe, podpiąć skryptów w javascripcie, które mogą zmieniać adres na chociażby stronę z wirusem
+		foreach.php ,manual
+ 
 
+ 
+192.168.3.10:8000 
 
