@@ -64,13 +64,14 @@ Serwery www szukają pliku **index.html**, a później **index.php**, a późnie
 =====terminal====
  php -S localhost:8000
  Każdy serwer php zaczyna się od pliku index.php
-To swojej nazwy logujemy się za pomocą localhost: na pasku adresu lub za pomocą ip 127.0.0.1
+Do swojej nazwy logujemy się za pomocą localhost: na pasku adresu lub za pomocą ip 127.0.0.1
  
  wszystkie dane post przesyłane z formularza są przesyłane jako tekst(nawet liczby czy spacje)
  jest to wazne, jeżeli chcemy bronić się przed hackerami, aby nie mogli oszukać przeszuakć hasłe, podpiąć skryptów w javascripcie, które mogą zmieniać adres na chociażby stronę z wirusem
 		foreach.php ,manual
  
-
- 
+**Ścieżka bezwzględna** - zaczynamy od katalogu głównego. np. [[/home/kl2ag1/public_html/phpapp/inc.]]
+**Ścieżka względna** - zakłada że jesteśmy w jakimś katalogu, np. w katalogu php. 
+ Za pomocą **include_once** dołącza się szablony.
 192.168.3.10:8000 
 
