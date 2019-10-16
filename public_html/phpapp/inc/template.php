@@ -17,15 +17,18 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="http://lo1.sandomierz.pl/plany/ostatni/index.html">Plan lekcji</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://lo1sandomierz.mobidziennik.pl">E-dziennik</a>
-                </li>
+            	<?php 
+            	get_menu($id);
+            	?>
             </ul>
         </div>
     </nav>
+
+ <div class="jumbotron">
+  <h1><?php get_page_title($id); ?></h1>
+  <p>Aplykacja włanczana w PHP</p>
+</div>
+
 
 <div class="container">
 	<div class="row">
