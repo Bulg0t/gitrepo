@@ -61,8 +61,8 @@ rem -
 ===== Serwer php: =====
 serwer php tworzymy w terminalu przez komendę **php -S localhost:8000.**
 Serwery www szukają pliku **index.html**, a później **index.php**, a później coś innego co może być skonfigurowane.
-=====terminal====
- php -S localhost:8000
+**=====terminal====**
+** php -S localhost:8000**
  Każdy serwer php zaczyna się od pliku index.php
 Do swojej nazwy logujemy się za pomocą localhost: na pasku adresu lub za pomocą ip 127.0.0.1
  
@@ -74,4 +74,11 @@ Do swojej nazwy logujemy się za pomocą localhost: na pasku adresu lub za pomoc
 **Ścieżka względna** - zakłada że jesteśmy w jakimś katalogu, np. w katalogu php. 
  Za pomocą **include_once** dołącza się szablony.
 192.168.3.10:8000 
+**Foreach** przyporządkowuje zmiennej jakąś wartość.
 
+==== ADRES STRONY: ====
+localhost/~kl2ag1/phpapp/
+
+=== UwAmp: ===
+localhost\phpapp to to samo:
+c:\UwAmp\www\phpapp
