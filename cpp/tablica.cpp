@@ -17,8 +17,16 @@ int main(int argc, char **argv)
 		cin >> tablica[i];
 		}
 	for(i = 0;i<rozmiar;i++){
-	cout << tablica[rozmiar - (i+1)]<<" ";
+	cout << tablica[rozmiar - (i+1)]<<" " ;
 		}
+	cout << endl;
+	for(i = 0;i<rozmiar;i++){
+	cout << tablica[i]<<" ";
+		}
+	/*cout << endl;
+	for(i = rozmiar - 1;i>-1;i--){
+	cout << tablica[i]<<" " ;
+		}*/
 
 	return 0;
 }
