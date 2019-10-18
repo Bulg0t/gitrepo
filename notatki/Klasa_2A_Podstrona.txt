@@ -75,6 +75,7 @@ Do swojej nazwy logujemy się za pomocą localhost: na pasku adresu lub za pomoc
  Za pomocą **include_once** dołącza się szablony.
 192.168.3.10:8000 
 **Foreach** przyporządkowuje zmiennej jakąś wartość.
+Operator **!** jest operatorem przeczenia.
 
 ==== ADRES STRONY: ====
 localhost/~kl2ag1/phpapp/
