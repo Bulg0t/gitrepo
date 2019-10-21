@@ -22,18 +22,16 @@ void drukujTab(int t[], int r){
 		}
 
 	}
-float srednia(int t[], int r){
+float srednia(int t[], int r) {
 	int i;
-	double suma;
-	for (i = 0; i<r; i++){
-		suma = suma + t[i];
+	float srednia;
+    for (i=0; i < r; i++){
+		srednia += t[i];
+    }
+    return srednia / r;
+   }
 
-		}
-	cout << suma/r;
-	}
-
-int main(int argc, char **argv)
-{
+int main(int argc, char **argv){
 
 	cout << "Ile ocen podasz ?";
 	int rozmiar;
@@ -41,7 +39,7 @@ int main(int argc, char **argv)
 	int tablica[rozmiar];
 	pobierzOceny(tablica, rozmiar);
 	drukujTab(tablica,rozmiar);
-	srednia(tablica, rozmiar);
+	cout << "Twoja srednia to: "<< srednia(tablica, rozmiar);
 	return 0;
 }
 
