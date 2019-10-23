@@ -22,19 +22,27 @@ void drukujTab(int t[], int r){
 		}
 
 	}
-float srednia(int t[], int r){
-	int i;
-	double suma;
-	for (i = 0; i<r; i++){
-		suma = suma + t[i];
 
-		}
-	cout << suma/r;
-	}
+float srednia(int t[], int r){
+    int i;
+    double s;
+    for (i = 0; i < r; i++){
+        s = s + t[i];
+    }
+    cout << float(s) / float(r);
+}
+//float srednia(int t[], int r){
+	//int i;
+	//double suma;
+	//for (i = 0; i<r; i++){
+	//	suma = suma + t[i];
+
+		//}
+	//cout << suma/r;
+	//}
 
 int main(int argc, char **argv)
 {
-
 	cout << "Ile ocen podasz ?";
 	int rozmiar;
 	cin >> rozmiar;
