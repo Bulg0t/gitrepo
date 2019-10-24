@@ -16,27 +16,27 @@ void koduj(char tabzn[],int rozmiar){
 
 void litery2liczby (char tabzn[], int rozmiar){
 		for(int i =  0; i < rozmiar; i++){
-		cout<< (int)tabzn[i] << endl; 
-	
+		cout<< (int)tabzn[i] << endl;
+
 }
 }
 
 void dekoduj(int kod[], int rozmiar){
-	cout << "Podaj tekst do dekodowania: "<< endl;
+	cout << "Podaj liczby do dekodowania: "<< endl;
 	for(int i = 0; i < rozmiar; i++){
 	cin >> kod[i];
 }
-	cout<< "Twoj odkodowany tekst to: " << endl; 
+	cout<< "Twoj odkodowany tekst to: " << endl;
 	for (int i= 0; i < rozmiar; i++){
 		cout<< (char)kod[i];
-		
+
 	}
 }
 
 
 
 
- 
+
 int main(int argc, char **argv)
 {
 	int rozmiar = 11;
