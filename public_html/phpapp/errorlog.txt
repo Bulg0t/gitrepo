@@ -22,3 +22,93 @@ Stack trace:
 #1 /home/kl2ag1/public_html/phpapp/index.php(19): init_tables()
 #2 {main}
   thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 16
+[25-Oct-2019 08:58:26 Europe/Warsaw] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 table menu already exists in /home/kl2ag1/public_html/phpapp/inc/db.php:12
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/db.php(12): PDO->exec('CREATE TABLE me...')
+#1 /home/kl2ag1/public_html/phpapp/index.php(17): init_tables()
+#2 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 12
+[25-Oct-2019 09:00:03 Europe/Warsaw] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 table menu already exists in /home/kl2ag1/public_html/phpapp/inc/db.php:12
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/db.php(12): PDO->exec('CREATE TABLE me...')
+#1 /home/kl2ag1/public_html/phpapp/index.php(17): init_tables()
+#2 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 12
+[25-Oct-2019 09:01:50 Europe/Warsaw] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 table menu already exists in /home/kl2ag1/public_html/phpapp/inc/db.php:12
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/db.php(12): PDO->exec('CREATE TABLE me...')
+#1 /home/kl2ag1/public_html/phpapp/index.php(17): init_tables()
+#2 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 12
+[25-Oct-2019 09:06:53 Europe/Warsaw] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 table menu already exists in /home/kl2ag1/public_html/phpapp/inc/db.php:12
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/db.php(12): PDO->exec('CREATE TABLE me...')
+#1 /home/kl2ag1/public_html/phpapp/index.php(17): init_tables()
+#2 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 12
+[25-Oct-2019 09:06:54 Europe/Warsaw] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 table menu already exists in /home/kl2ag1/public_html/phpapp/inc/db.php:12
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/db.php(12): PDO->exec('CREATE TABLE me...')
+#1 /home/kl2ag1/public_html/phpapp/index.php(17): init_tables()
+#2 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 12
+[25-Oct-2019 09:07:06 Europe/Warsaw] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1 table menu already exists in /home/kl2ag1/public_html/phpapp/inc/db.php:12
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/db.php(12): PDO->exec('CREATE TABLE me...')
+#1 /home/kl2ag1/public_html/phpapp/index.php(17): init_tables()
+#2 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 12
+[25-Oct-2019 09:16:33 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/kl2ag1/public_html/phpapp/inc/db.php on line 13
+[25-Oct-2019 09:16:48 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '$kom' (T_VARIABLE) in /home/kl2ag1/public_html/phpapp/inc/db.php on line 16
+[25-Oct-2019 09:31:09 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'dbquery' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:13 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'dbquery' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:27 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:28 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:34 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:34 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:43 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:43 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:43 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:43 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:44 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:44 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:31:44 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:32:03 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:32:04 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '$db' (T_VARIABLE) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:32:27 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:32:27 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:32:27 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:32:28 Europe/Warsaw] PHP Parse error:  syntax error, unexpected 'db_query' (T_STRING) in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 10
+[25-Oct-2019 09:32:34 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to undefined function query() in /home/kl2ag1/public_html/phpapp/inc/db.php:25
+Stack trace:
+#0 /home/kl2ag1/public_html/phpapp/inc/functions.php(10): db_query('SELECT * FROM m...', Array)
+#1 /home/kl2ag1/public_html/phpapp/inc/template.php(21): get_menu('witam')
+#2 /home/kl2ag1/public_html/phpapp/index.php(22): include_once('/home/kl2ag1/pu...')
+#3 {main}
+  thrown in /home/kl2ag1/public_html/phpapp/inc/db.php on line 25
+[25-Oct-2019 09:32:55 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:36:39 Europe/Warsaw] PHP Fatal error:  Cannot use [] for reading in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 15
+[25-Oct-2019 09:36:45 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:37:10 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:37:11 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:37:15 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:38:11 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:38:11 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:38:11 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:38:12 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:38:12 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:38:12 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:38:16 Europe/Warsaw] PHP Notice:  Undefined offset: 15 in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 15
+[25-Oct-2019 09:38:16 Europe/Warsaw] PHP Notice:  Undefined offset: 15 in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 15
+[25-Oct-2019 09:38:16 Europe/Warsaw] PHP Notice:  Undefined offset: 15 in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 15
+[25-Oct-2019 09:38:16 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:38:17 Europe/Warsaw] PHP Notice:  Undefined offset: 15 in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 15
+[25-Oct-2019 09:38:17 Europe/Warsaw] PHP Notice:  Undefined offset: 15 in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 15
+[25-Oct-2019 09:38:17 Europe/Warsaw] PHP Notice:  Undefined offset: 15 in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 15
+[25-Oct-2019 09:38:17 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:40:52 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:40:56 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:40:58 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:40:59 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:41:09 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22
+[25-Oct-2019 09:41:11 Europe/Warsaw] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /home/kl2ag1/public_html/phpapp/inc/functions.php on line 22

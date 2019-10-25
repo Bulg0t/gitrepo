@@ -1,15 +1,18 @@
 <?php
-$pages = array(
-	'witam' => 'Witamy',
-	'formularz' => 'Formularz',
-	'klasa' => 'Klasa'
-);
+// $pages = array(
+// 	'witam' => 'Witamy',
+// 	'formularz' => 'Formularz',
+// 	'klasa' => 'Klasa'
+// );
 function get_menu($id){
-	global $pages;
-	foreach ($pages as $p => $t) {
+	global $db;
+	$ret = array();
+	db_query('SELECT * FROM menu', $ret);
+	// print_r($ret);
+	foreach ($ret as $k => $t) {
 		echo'
-					<li class="nav-item">
-              <a class="nav-link" href="?id='.$p.'">'.$t.'</a>
+			<li class="nav-item">
+              <a class="nav-link" href="?id='.$t['plik'].'">'.$t['tytul'].'</a>
           </li>
 				';
 	}

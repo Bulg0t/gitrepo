@@ -9,10 +9,28 @@ function init_tables(){
 	global $db;
 	if(file_exists(DBASE.'baza.sql')){
 		$sql = file_get_contents(DBASE.'baza.sql', 'r');
-		if ($db->exec($sql)){
+		$q = "SELECT name FROM sqlite_master WHERE type='table' AND name = 'menu'";
+		$ret = $db-> query($q);
+		if (empty($ret)){
+			$db->exec($sql);
 			$kom[] = "Utworzono tabele";
 		}
 	}
 }
-;
+
+
+function db_query($q, &$ret){
+	global $db;
+	try{
+		$r = $db->query($q);
+	} catch(PDOException $e){
+		echo($e->getMessage());
+
+	}
+	if ($r){ 
+		$ret = $r->fetchAll(); 
+		return true;
+}
+return false;
+}
 ?>
