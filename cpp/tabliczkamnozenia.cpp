@@ -1,5 +1,5 @@
 /*
- * tablica2w.cpp
+ * tablicamnozenia.cpp
  */
 
 
