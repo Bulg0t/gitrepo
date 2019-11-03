@@ -27,7 +27,7 @@ int main(int argc, char **argv)
     }
     }
     cout << endl;
-    cout<<"Ilosc slow w zdaniu ""'"<<tekst<<"'"" wynosi "<<k<<endl;
+    cout<<"Ilosc slow w zdaniu ""'"<<tekst<<"'"" wynosi "<<k - 1<<endl;
 
 
     return 0;
