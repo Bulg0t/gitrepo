@@ -92,3 +92,5 @@ Stałe znakowe zapisujemy **dużymi literami np. N i M. **Srand służy do gener
 cin.getline(TABLICA, ROZMIAR) - to funkcja  ( getline usuwa znak końca linii \n z ciągu znaków) która pomaga w zapisywaniu tablicy znaków, przy użyciu spacji. 
 Jeżeli chcemy użyć pętli **while** do drukowania tablicy nie musimy znac jej rozmiaru. Kody **ASCII** dotyczą alfabetu łacińskiego.
 
+==== Anagramy ====
+Jeżeli chcemy wyznaczyć liczbę wyrazów o unikalnej kombinacji : Jesli wyraz ma długość **n** znaków to ilość tych wyrazów to **n!.**
