@@ -6,6 +6,7 @@ Creation-Date: 2019-09-11T09:09:18+02:00
 Created środa 11 września 2019
 
 github.com/lo1cgsan/phpapp
+gits.github.com/lo1cgsan/
 
 1)Dostosowanie wyglądu strony.
 2) CDN - Content Delivery Network.
@@ -61,24 +62,31 @@ rem -
 
 
 ===== Serwer php: =====
-serwer php tworzymy w terminalu przez komendę **php -S localhost:8000.**
 Serwery www szukają pliku **index.html**, a później **index.php**, a później coś innego co może być skonfigurowane.
 **=====terminal====**
 ** php -S localhost:8000**
+192.168.3.10:8000 
  Każdy serwer php zaczyna się od pliku index.php
 Do swojej nazwy logujemy się za pomocą localhost: na pasku adresu lub za pomocą ip 127.0.0.1
  
  wszystkie dane post przesyłane z formularza są przesyłane jako tekst(nawet liczby czy spacje)
  jest to wazne, jeżeli chcemy bronić się przed hackerami, aby nie mogli oszukać przeszuakć hasłe, podpiąć skryptów w javascripcie, które mogą zmieniać adres na chociażby stronę z wirusem
 		foreach.php ,manual
- 
 **Ścieżka bezwzględna** - zaczynamy od katalogu głównego. np. [[/home/kl2ag1/public_html/phpapp/inc.]]
 **Ścieżka względna** - zakłada że jesteśmy w jakimś katalogu, np. w katalogu php. 
  Za pomocą **include_once** dołącza się szablony.
-192.168.3.10:8000 
 **Foreach** przyporządkowuje zmiennej jakąś wartość.
 Operator **!** jest operatorem przeczenia.
 
+
+==== Klasy ====
+W klasach **var** - określa się atrybut do danej klasy.
+Protokół **https **działa na zasadzie **pytanie-odpowiedź**. To protokół, który nie pamięta tego co było wcześniej.
+Serwer tworzy SESJĘ , i dla niej też osobny plik. W tym pliku można zapisywac informacje dotyczące użytkownika. Sesja też jest plikiem, jest to plik zapisywany po stronie serwera, w tym pliku są informacje.
+Serwer wysyła informacje do klienta. Przeglądarka wykorzystuje cookie, które rozpoznają treści podawane przez użytkownika i je zapamiętują.
+Przeglądarka tworzy cookie dla klienta. Ciasteczka są zapisywane po stronie klienta. Przeglądarka zapisuje w ciastkach dane użytkowników po stronie klienta, a SESJA zapisuje dane po stronie serwera.
+Funkcja .sha1 - hash - dla każdego hasła ciąg liter i cyfr jest unikalny. Pozwala na kodowanie haseł np. z hasła **zaq1@WSX** tworzy ciąg 40 znakowy : c380f833034d60bf035a134094eb538d600dc6f i do wydobywania haseł.
+$this - obiekt użytkownika. 
 
 ==== ADRES STRONY: ====
 localhost/~kl2ag1/phpapp/
