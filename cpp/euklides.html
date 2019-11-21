@@ -20,9 +20,10 @@
 	<input type="text" id="b">
 	<br><br>
 	<button id="oblicz" onclick="nwd1()">Oblicz NWD</button>
+	<button id="oblicz" onclick="nwd2()">Oblicz NWD2</button>
 	<hr>
 	<p class="wynik"></p>
-	<p class="wynik"></p>
+	<p class="wynik1"></p>
 	
 </div>
 <script type="text/javascript">
@@ -39,23 +40,22 @@
 			b = b - a;
 		}
 		w = document.getElementsByClassName("wynik");
-		w[0].innerHTML = "Nwd(" + a1 + "," + b1 + ") = " + a ;
+		w[0].innerHTML = "Nwd(" + a1 + "," + b1 + ") = " + a;
 		}
-	function nwd1(){
-	a = document.getElementById("a").value;
-	b = document.getElementById("b").value;
-	a1 = a = parseInt(a);
-	b1 = b = parseInt(b);
-	while (a != b){
-		if (a > b){
-			a = a % b;
-		}
-		else
-			b = b - a;
-		}
-		w = document.getElementsByClassName("wynik");
-		w[0].innerHTML = "Nwd(" + a1 + "," + b1 + ") = " + a ;
-		}
+
+    function nwd2(){
+    a=document.getElementById("a").value;
+    b=document.getElementById("b").value;
+    a1 = a = parseInt(a);
+    b1 = b = parseInt(b);
+    	while(a>0){
+        a=a%b;
+        b=b-a;
+    }
+   w = document.getElementsByClassName("wynik1");
+   w[1].innerHTML = "Nwd("+a1+","+b1+") = " + a;
+   }
+
 
 </script>
 
