@@ -80,6 +80,7 @@ int i = 0; //DEKLARACJA I INICJACJA
 Każda tablica musi mieć nawiasy kwadratowe. Musimy podać ile zmiennych.
 Zmienna 'tablica'(jej nazwa) ona wskazuje tylko pierwszą komórkę. Jak są tablice, to najczęściej będzie pętla.
 Adres komórki w pamięci jest referencją.**Tablica** jest od razu **referencją. Tablica jest przekazywana przez referencję.**
+Zmienna po **wskaźniku** jest **wskaźnikiem** do jakiejś komórki w którje będą przechowywane floaty.
 
 
 
@@ -94,3 +95,8 @@ Jeżeli chcemy użyć pętli **while** do drukowania tablicy nie musimy znac jej
 
 ==== Anagramy ====
 Jeżeli chcemy wyznaczyć liczbę wyrazów o unikalnej kombinacji : Jesli wyraz ma długość **n** znaków to ilość tych wyrazów to **n!.**
+
+
+== Złoty podział wskazują liczby fibonacciego. ==
+
+ 
