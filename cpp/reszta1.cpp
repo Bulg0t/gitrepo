@@ -35,6 +35,19 @@ void wczytajNominaly() {
 		}
 	cout << endl;
 	}
+int policzNominal(int n){
+	int ile = 0;
+	for(int i = 0; i < liczbaNominalow; i++){
+		if(n > nominaly[i]) break;
+		if(nominaly[i] == n){
+			ile++;
+		}
+
+	}
+		return ile;
+
+}
+
 void znajdzReszte(int reszta){
 	cout << "Wypłacone nominały: "<<endl;
 	int aktualnyNominal = 0;
@@ -42,15 +55,25 @@ void znajdzReszte(int reszta){
 		cout << "reszta = " << reszta << endl;
 		while(aktualnyNominal < liczbaNominalow && reszta < nominaly[aktualnyNominal])
 		++aktualnyNominal;
-		cout << "aktualny nominał: " << nominaly[aktualnyNominal] << endl;
-		if(aktualnyNominal < liczbaNominalow && reszta>= nominaly[aktualnyNominal]){
-		int lB = reszta / nominaly[aktualnyNominal];
-		reszta = reszta - lB*nominaly[aktualnyNominal];
-		cout << lB << "X" << nominaly[aktualnyNominal] << "zł" << endl;
+		int nominal = nominaly[aktualnyNominal];
+		
+		cout << "aktualny nominał: " << nominal << endl;
+		if(aktualnyNominal < liczbaNominalow && reszta>= nominal){
+		int lB = reszta / nominal;
+		cout << "Dostępnych nominałów: " << policzNominal(nominal) <<endl;
+		reszta = reszta - lB*nominal;
+		cout << lB << "X" << nominal << "zł" << endl;
 	}
+		}
+	if(reszta > 0){
+		cout << "Brak nominałów do wydania kwoty: " << reszta << endl;
 		} 
 	
 	 }
+
+//w petli for mam zbedny nawias
+//nie bierze pod uwage ile mam dostępnych nominalow
+//
 
 
 int main(int argc, char **argv)
@@ -65,6 +88,5 @@ int main(int argc, char **argv)
 		cin >> wplata;
 		}while(wplata < cena);
 	znajdzReszte(wplata - cena);
-	
 	return 0;
 }
