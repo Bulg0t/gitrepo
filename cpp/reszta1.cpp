@@ -35,15 +35,19 @@ void wczytajNominaly() {
 		}
 	cout << endl;
 	}
-int znajdzReszte(int reszta){
+void znajdzReszte(int reszta){
 	cout << "Wypłacone nominały: "<<endl;
 	int aktualnyNominal = 0;
 	while (reszta > 0 && aktualnyNominal < liczbaNominalow){
 		cout << "reszta = " << reszta << endl;
-		znajdź nawiększy dostępny nolminal mniejszy od reszty;
+		while(aktualnyNominal < liczbaNominalow && reszta < nominaly[aktualnyNominal])
+		++aktualnyNominal;
 		cout << "aktualny nominał: " << nominaly[aktualnyNominal] << endl;
-		oblicz wymaganą ilosc nominałów
-		pomniejsz resztę
+		if(aktualnyNominal < liczbaNominalow && reszta>= nominaly[aktualnyNominal]){
+		int lB = reszta / nominaly[aktualnyNominal];
+		reszta = reszta - lB*nominaly[aktualnyNominal];
+		cout << lB << "X" << nominaly[aktualnyNominal] << "zł" << endl;
+	}
 		} 
 	
 	 }
@@ -60,7 +64,7 @@ int main(int argc, char **argv)
 		cout << "Podaj wpłatę: ";
 		cin >> wplata;
 		}while(wplata < cena);
-	znajdzReszte(wplata - cena)
+	znajdzReszte(wplata - cena);
 	
 	return 0;
 }
