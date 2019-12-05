@@ -44,7 +44,7 @@ int szukaj_re2(int liczby[], int lewy, int prawy, int n){
 			return prawy;
 			}
 		else{
-			szukaj_re(liczby, lewy,prawy -1, n);
+			szukaj_re2(liczby, lewy,prawy -1, n);
 			}
 		
 		}
@@ -57,7 +57,8 @@ int main(int argc, char **argv)
 	int n;
 	cout << "Podaj szukany element: "<<endl;
 	cin >> n;
-	int indeks = szukaj_re2(liczby,1 ,7, n);
+	int indeks = szukaj_re(liczby,1 ,7, n);
+	int indeks1 = szukaj_re2(liczby,1 ,7, n);
 	if(indeks > -1){
 	cout << liczby[indeks] << endl;
 	}
