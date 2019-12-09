@@ -20,6 +20,14 @@ int fibonacci_it(int n) {
     }
     return wynik;
 }
+int fibonacci_re(int n){
+	if(n < 2){
+		return 1;
+		}
+	else
+		return fibonacci_re(n-1) + fibonacci_re(n-2);
+
+	}
 
 int main(int argc, char **argv)
 {
