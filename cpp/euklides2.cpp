@@ -36,6 +36,15 @@ int NWD_re2(int a, int b){
 		return NWD_re2(b, a%b);
 	//napisac iteracyjna nwd_re2
 	}
+int NWD_it2(int a, int b){
+	int i = 0;
+	while(b > 0){
+		i++;
+		a = b;
+		b = a%b;
+		}
+	return a;
+	}
 int main(int argc, char **argv)
 {
 	int a, b, i;
@@ -44,6 +53,7 @@ int main(int argc, char **argv)
 	cin >> a >> b;
 	cout << "Największy wspólny dzielnik to: " << NWD_re1(a,b) << endl;
 	cout << "Największy wspólny dzielnik to: " << NWD_re2(a,b) << endl;
+	cout << "Największy wspólny dzielnik to: " << NWD_it2(a,b) << endl;
 	
 	
 	return 0;
