@@ -39,7 +39,7 @@ void dekoduj(int kod[], int rozmiar){
 
 int main(int argc, char **argv)
 {
-	int rozmiar = 11;
+	int rozmiar = 8;
 	char napis[rozmiar];
 	int kod[rozmiar];
 	koduj(napis, rozmiar);

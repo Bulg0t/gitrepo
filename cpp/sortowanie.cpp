@@ -1,5 +1,5 @@
 /*
- * sortowanie.cxx
+ * sortowanie.cpp
  */
 
 
@@ -43,6 +43,7 @@ void zamien(int &a, int &b){
 }
 void selection_sort(int tab[], int n){
 	int i, j, k;
+	int ile = 0;
 	for (i = 0; i < n; i++){
 			k = i;
 			for(j=i+1; j<n; j++){
@@ -50,10 +51,31 @@ void selection_sort(int tab[], int n){
 					k=j;
 			}
 			}
-		zamien(tab[k], tab[i]);	
+		zamien(tab[k], tab[i]);
+					ile++;
+
 	}
+
+		cout << "Zamian: " << ile << endl;
+
 	
 }
+void bubble_sort(int tab[], int n){
+	int ile = 0;
+	for(int i = n-1; i>0; i--){
+		cout << "Indeks i = " << i << " ";
+		for(int j = 0; j < i; j++){
+			cout << "Indeks j = " << j << " ";
+		if(tab[j] < tab[j+1]){
+		zamien(tab[j], tab[j+1]);
+		ile++;
+			}
+		}
+		cout << endl;
+		}
+	cout << "Zamian: " << ile << endl;
+
+	}
 
 int main(int argc, char **argv){
 	int n;
@@ -65,6 +87,7 @@ int main(int argc, char **argv){
 	copytab(tab, tab2, n);
 	wyswietl(tab2, n);
 	selection_sort(tab, n);
+	bubble_sort(tab2, n);
 	wyswietl(tab, n);
 	return 0;
 }
