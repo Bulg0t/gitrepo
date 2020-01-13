@@ -60,7 +60,7 @@ void selection_sort(int tab[], int n){
         zamien(tab[k], tab[i]);
     }
     cout<<"Zamian przy uzyciu selection sort: "<<ile<<endl;
-}
+} 
 
 void boubble_sort(int tab[], int n){
     int ile = 0;

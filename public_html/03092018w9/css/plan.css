@@ -58,7 +58,7 @@ a.k {
 
 .op {
     /* napis */
-    font: 10px verdana, sans-serif
+    font: 10px TimesNewRoman, sans-serif
 }
 
 @media print {
