@@ -31,6 +31,8 @@ Elementem **root** jest najczęściej samo HTML.
 **&** - oddziela zmienne.
 W linku **+** oznacza spację.
 **Validacja** – sprawdzanie poprawności.
+Dzięki print_r możemy zobaczyć zawartość zmiennych.
+Escapujemy znaki \. Gdy mamy źle cudzysłowy.
 
 ===== Formularz: =====
 Metoda **GET** - nie koduje. Jeżeli formularz przesyła wrazliwe dane, nie używamy **GET**. Np. W wyszukiwarce możemy stosować **GET**
@@ -77,6 +79,18 @@ Do swojej nazwy logujemy się za pomocą localhost: na pasku adresu lub za pomoc
  Za pomocą **include_once** dołącza się szablony.
 **Foreach** przyporządkowuje zmiennej jakąś wartość.
 Operator **!** jest operatorem przeczenia.
+Mamy języki kompilowane(C++, kompilator, linker) i interpretowane(PHP, Python, Java Script).
+Do php jest potrzebny interpreter.
+Po stronie serwera www nie robimy kompilacji, ani linkowania.
+Jeżeli serwer ma interpretować kod php to żądanie musi iść do pliku php, który włancza inne pliki zawierające kod php. Wszystko to tworzy jeden plik php, który jest interpretowany przez interpreter i zwracany do jednego miejsca.
+Metoda, którą zmieniamy bazę danych to metoda POST. Metody POST uzywamy tez do logowania, jako dostępne dane w tablicy $_POST.
+Walidacja to sprawdzanie poprawności danych. Polega na uzywaniu odpowiednich atrybutów HTML5 . Autoryzacja to przyznawanie komuś uprawnień do czegoś. Autentykacja to sprawdzić, czy ktoś jest tym za kogo się podaje.
+Do sprawdzenia poprawnosci danych mozna uzyc strlen, htmlspecialchars, nie ma array, nie ma echo.
+Zmienne w php są tworzone w momencie pierwszego przypisania. Aby wartość zmiennej znalazła sie w ciągu znakowym użyjemy "zmienna $zmienna" lub "zmienna {$tab[zmienna]}". 
+W formularzu html typu post aby odczytać pole o nazwie kod przesłaną wartość odcztamy za pomocą instrukcji $_POST[kod].
+Foreach umożliwia przeglądanie elementów tablicy.
+Dostęp do pierwszego elementu tablicy zdefiniowanej w klasie jako public.static otrzymamy za pomocą czegoś.
+
 
 
 ==== Klasy ====
@@ -86,7 +100,7 @@ Serwer tworzy SESJĘ , i dla niej też osobny plik. W tym pliku można zapisywac
 Serwer wysyła informacje do klienta. Przeglądarka wykorzystuje cookie, które rozpoznają treści podawane przez użytkownika i je zapamiętują.
 Przeglądarka tworzy cookie dla klienta. Ciasteczka są zapisywane po stronie klienta. Przeglądarka zapisuje w ciastkach dane użytkowników po stronie klienta, a SESJA zapisuje dane po stronie serwera.
 Funkcja .sha1 - hash - dla każdego hasła ciąg liter i cyfr jest unikalny. Pozwala na kodowanie haseł np. z hasła **zaq1@WSX** tworzy ciąg 40 znakowy : c380f833034d60bf035a134094eb538d600dc6f i do wydobywania haseł.
-$this - obiekt użytkownika. 
+$this - obiekt użytkownika.  
 
 ==== ADRES STRONY: ====
 localhost/~kl2ag1/phpapp/

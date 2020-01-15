@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-01-02T10:28:05+01:00
+
+====== algorytmy ======
+Created czwartek 02 stycznia 2020
+
+==== Własności algorytmu: ====
+- poprawność algorytmów zależy od specyfikacji problemu, czyli opisania jakie zadanie ma rozwiązywać dany algorytm,
+-
