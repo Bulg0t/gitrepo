@@ -1,0 +1,53 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-01-17T10:18:09+01:00
+
+====== javascript ======
+ 
+Podstawowy skrypt.
+**<script type="text/javascript">**
+**// Edit your script here**
+**var a = 5;**
+**var b = 10;**
+**var c = a + b;**
+**console.log(c);**
+**document.write("<h1>"+c"</h1>");**
+**window.alert(c);**
+**document.write('<p id="js"></p>');**
+**document.getElementById("js").ubberHTML= c;**
+**</script>**
+**<!-- edit your html here →**
+
+Przykładowy kod na sprawdzanie, czy na danych bokach można utworzyć trójkąt.
+**<script>**
+**// Edit your script here**
+**var bok_a = parseInt(prompt('Podaj bok: '));**
+**var bok_b = parseInt(prompt('Podaj bok: '));**
+**var bok_c = parseInt(prompt('Podaj bok: '));**
+**document.write(bok_a + bok_b + bok_c);**
+**if (bok_a+bok_b>bok_c && bok_a+bok_c>bok_b && bok_b+bok_c>bok_a) {**
+**	window.alert('da się!');**
+**} else {**
+**   	window.alert('nie da się');**
+**}**
+**</script>**
+**<!-- edit your html here -->**
+
+document.write - dynamiczne drukowanie czegoś
+Instukcja **prompt **słuzy do pobierania informacji od uzytkownika.
+window.alert - wyświetlanie powiadomień w okienku.
+Są trzy podstawowe typy danych w JS:
+- liczba
+- string(napis)
+-obiekty np. **var osoba = {imie:"Dorota", nazwisko:"Koks"};**
+Do obiektow mozna dostac się za pomocą kropki. np.**document.write(osoba.imie);**
+Obiekt może przechowywac wartosci różnego typu np. 
+**var osoba = {**
+**imie:"Dorota", **
+**nazwisko:"Koks",**
+**wiek:25**
+**};**
+Java script obsługuje też tablice, inicjujemy ją za pomocą np. **var tablica = ["fiat", "skoda", "koks"];**
+Tablica jest indeksowana od 0, można wywołać elementy tablicy metodą **document.write(tablica[1]);**
+
+
