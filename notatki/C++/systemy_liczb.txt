@@ -36,3 +36,6 @@ Reszty spisujemy w odwrotnej kolejności niż były zapisywane.
 1/2 r.1
 0
 Liczba binarna: 11011011
+
+==== System szesnastkowy ====
+

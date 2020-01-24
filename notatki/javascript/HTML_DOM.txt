@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-01-22T08:59:55+01:00
+
+====== HTML DOM ======
+Created at środa 22 stycznia 2020
+
+HTML DOM - to obiektowy model dokumentu HTML przedstawiony w postaci drzewa, wyróżniamy w nim składniki które tworzą stronę internetową.
+Każdy obiekt ma swoje własności i metody. Obiekt nadrzędny rodzica może mieć sporo dzieci. 
+Drzewo
+rodzic(parent)
+dziecko(child)
+rodzeństwo(sibling)
+**innerHTML** - właściwość, która zwraca nam zawartość kodu HTML 
+Do elementów strony można dostawać się nie tylko przez id, ale przez nazwy np. tagów.
+document.getElementsByTagName("nazwa elementu np. div").
+ Jak się dostajemy do elementów przez nazwę nie dostajemy jednego elementu, ale kolekcję która zachowuje się jak tablica w języku programowania.
+ Aby dostać się do danego elementu kolekcji uzywamy indeks elementu.
+Jednym z częściej modyfikowanych atrybutów jest atrybut **style. **Używamy wtedy właściwości **CSS.**
+To co jest w atrybucie **value** jest przesyłane do //serwera//, a poza atrybutem wyświetlane uzytkownikowi np.   <option value="**ford**">//Ford//</option>.
+Zdarzenie **onclick** obsługuje kliknięcia użytkownika.
+Do zdarzenia onsubmit dopisuje się funkcję JS która zwraca fałsz lub prawdę.

@@ -4,7 +4,8 @@ Creation-Date: 2020-01-17T10:18:09+01:00
 
 ====== javascript ======
  
-Podstawowy skrypt.
+
+==== Podstawowy skrypt. ====
 **<script type="text/javascript">**
 **// Edit your script here**
 **var a = 5;**
@@ -18,7 +19,7 @@ Podstawowy skrypt.
 **</script>**
 **<!-- edit your html here →**
 
-Przykładowy kod na sprawdzanie, czy na danych bokach można utworzyć trójkąt.
+==== Przykładowy kod na sprawdzanie, czy na danych bokach można utworzyć trójkąt. ====
 **<script>**
 **// Edit your script here**
 **var bok_a = parseInt(prompt('Podaj bok: '));**
@@ -33,21 +34,37 @@ Przykładowy kod na sprawdzanie, czy na danych bokach można utworzyć trójkąt
 **</script>**
 **<!-- edit your html here -->**
 
-document.write - dynamiczne drukowanie czegoś
+document.write('') - dynamiczne drukowanie czegoś, zapisuje coś w strukturze HTML, zależnie od tego co wpisujemy.
+Najczęściej w nawiasie dajemy pojedynczy nawias, gdyż id html zapisujemy w podwójnym cudzysłowie.
 Instukcja **prompt **słuzy do pobierania informacji od uzytkownika.
 window.alert - wyświetlanie powiadomień w okienku.
-Są trzy podstawowe typy danych w JS:
+
+=== Są trzy podstawowe typy danych w JS: ===
 - liczba
 - string(napis)
 -obiekty np. **var osoba = {imie:"Dorota", nazwisko:"Koks"};**
 Do obiektow mozna dostac się za pomocą kropki. np.**document.write(osoba.imie);**
-Obiekt może przechowywac wartosci różnego typu np. 
+
+==== Obiekt może przechowywac wartosci różnego typu np. ====
 **var osoba = {**
 **imie:"Dorota", **
 **nazwisko:"Koks",**
 **wiek:25**
 **};**
-Java script obsługuje też tablice, inicjujemy ją za pomocą np. **var tablica = ["fiat", "skoda", "koks"];**
+
+Java script obsługuje też **tablice**, inicjujemy ją za pomocą np. **var tablica = ["fiat", "skoda", "koks"];**
 Tablica jest indeksowana od 0, można wywołać elementy tablicy metodą **document.write(tablica[1]);**
+Obiektem nadrzędnym jest zawsze dokument.
+document.getElementById() – służy do wyszukiwania elementu wg id, i podawanie nam go. Jest to metoda dostawania się do danych.
+document.getElementsByName() - służy do dostawania się przez "imię" elementu.
+document.getElementsByClassName("wybor") - służy do dostawania się do kolekcji obiektów. Zwrócone zostaną wszystkie elementy które mają klasę np. wybor. Zmienna później zachowuje się jak tablica.
+document.getElementsByTagName("input") - dostajemy się do elementu o nazwie tagu **input**. Wyszukuje wszystkie elementy input na stronie, następnie musze odczytac pierwszy, czyli **[0]** i wartośc : dodaję .**value** na końcu.
+Ciągi tekstowe w JS łączy się za pomocą **+**.
+Możemy stosować window.alert() lub console.log(). Window alert wyskakuje w okienku, a console w konsoli.
+Jeśli javascript nie jest w stanie czegoś zidentyfikować, to javascript wyświetla **undefined.**
+Funkcja w skrypcie zostaje uruchomiona wtedy, gdy zajdzie zdarzenie **onchange**.
+Znacznik **form **musi mieć przycisk typu submit, i jedno pole do którego można coś wpisać.
+Aby sprawdzić długosc ciągu używamy **(zmienna.length)**.
+
 
 
