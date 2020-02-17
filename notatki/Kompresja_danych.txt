@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-02-13T11:03:04+01:00
+
+====== Kompresja danych ======
+Created czwartek 13 lutego 2020
+
+Kompresja danych  – zmniejszenie wielkości przede wszystkim plików.
+Najwydajniejszą kompresją jest .7zip
+
+==== Rodzaje kompresji : ====
+**-Kompresja bezstratna:**
+
+ 7zip, zip, xz, rar. Dzięki niej uzyskujemy informację nienaruszoną.  Pliki w środku zawierają te same dane, co przed kompresją.
+**Wsþółczynnik kompresji:**
+Rc = Vk / Vnk * 100%  Vk- dane skompresowane, Vnk - dane nieskompresowane, licząc współczynnik otrzymamy wynik w ilu procentach skompresowały się dane.
+Vnk = 352 kB
+Vk = 66,6 kB
+Rc = 66,6/352 * 100% = 18.92 %.
+Inny wzór: R'c = (1 - Vk/Vnk)*100% - ile danych zostało zaoszczędzone.
+R'c = (1 - 66.6/352)*100% = 81.07%
+
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Współczynnik kompresji</title>
+<meta name="generator" content="Geany 1.32" />
+</head>
+
+<body>
+<p>Podaj rozmiar po kompresji: </p>
+<input id="Vk">
+<p>Podaj rozmiar przed kompresją: </p>
+<input id="Vnk">
+<br><br>
+<button onclick = "obliczWsp()">Oblicz współczynnik kompresji</button>
+<p id="Rc"></p>
+<p id="R'c"></p>
+<script>
+	function obliczWsp() {
+			var x = document.getElementById("Vk").value;
+			var y = document.getElementById("Vnk").value;
+		if(parseInt(x) > parseInt(y)){
+			alert("Błędne dane");
+		}
+		else{
+			var w = x*100/y;
+			var f = ((1-x)*100/y);
+			document.getElementById("Rc").innerHTML = "Rc = " +w+"%";
+			document.getElementById("R'c").innerHTML = "R'c = " +f+"%";
+			}
+		}
+	
+</script>
+</body>
+
+</html>
