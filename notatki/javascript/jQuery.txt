@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-02-19T09:15:40+01:00
+
+====== jQuery ======
+Created środa 19 lutego 2020
+
+Bibliotekę jQuery dołączamy w znaczniku <head> lub na końcu znacznika <body>.
+**<script src="jquery-3.4.1.min.js"></script>**
+Lub stosujemy CDN - content delivery network.
+**<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>**
+To moze byc dowolny serwer np. google.
+Przegladarka przetwarza stronę od góry do dołu i dopiero gdy przetworzy ją w całości to może się dostać.
+Dlatego skrypty manipulujące stroną dołączamy na koncu <body>.
+Składnię zaczynamy znakiem '$' potem w nawiasach podajemy selektory. Dodajemy metodę ready, która sprawdza czy selektor został załadowany
+W nawiasie po ready wstawiamy funkcję. Większość wywołań w jQuery kończą się na np. .ready(function(){});
+$("p") dla wszystkich znaczników/akapitów.
+Przed selektorem klasy dajemy kropkę ".wynik" Metoda text() może posłużyć do zmiany dotychczasowego tektu wpisywanego w dany element.
+Jeżeli chcemy wybrać element przed id to używamy #

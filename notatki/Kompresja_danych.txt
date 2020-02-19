@@ -19,7 +19,8 @@ Vk = 66,6 kB
 Rc = 66,6/352 * 100% = 18.92 %.
 Inny wzór: R'c = (1 - Vk/Vnk)*100% - ile danych zostało zaoszczędzone.
 R'c = (1 - 66.6/352)*100% = 81.07%
+**Post Script** – to standard przesyłania danych między komputerem a drukarką.
 
 
-
+Tryb progresywny pozwala wyświetlać zdjęcie porcjami.
 
