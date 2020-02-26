@@ -16,5 +16,23 @@ $(document).ready(function(){
 			});
 			// podczas opuszczania myszy z obszaru input
 			//przywróć poprzedni kolor tła
+			$('#1').dblclick(function(){
+				$(this).hide();
+			});
+			$('#2').mouseover(function(){
+				$(this).hide();
+			});
+			$('#3').mouseover(function(){
+				$('#4').hide(10);
+			});
+			$('#3').mouseleave(function(){
+				$('#4').show(10);
+			});
+			$('#4').mouseover(function(){
+				$('#3').hide(10);
+			});
+			$('#4').mouseleave(function(){
+				$('#3').show(10);
+			});
 
 	});
