@@ -23,8 +23,7 @@ $(document).ready(function(){
 				$(this).hide();
 			});
 			$('#3').mouseover(function(){
-				$('#4').hide(10);
-			});
+				$('#4').hide(10); });
 			$('#3').mouseleave(function(){
 				$('#4').show(10);
 			});

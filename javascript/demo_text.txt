@@ -1,0 +1,3 @@
+<p>
+<strong>Lubie kompresje danych.</strong>
+</p>
