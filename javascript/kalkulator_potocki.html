@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   jquery.html
+-->
+
+<head>
+<meta charset="utf-8" />
+<title>Kalkulator</title>
+<link rel="stylesheet" href="style.css">
+<script src="jquery-3.4.1.min.js"></script>
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+-->
+</head>
+
+<body>
+  <h1>Kalkulator</h1>
+  <br>
+  <button type="button" id="czysc">Wyczyść</button>
+  <br>
+  <br>
+  <label for="1">Liczba1:  </label>
+  <input type="text" id="1">
+  <label for="2">Liczba2:   </label>
+  <input type="text" id="2">
+  <br>
+  <div class="wynik">Wynik: </div>
+  <br>
+  <button type="button" id="dodaj">+</button>
+  <button type="button" id="odejmij">-</button>
+  <button type="button" id="mnoz">*</button>
+  <button type="button" id="dziel">/</button>
+<script>
+$(document).ready(function(){
+  var l1 = parseInt($("#1").val());
+  var l2 = parseInt($("#2").val());
+  $("#dodaj").click(function(){
+    var dodaj = l1+l2;
+    $("div.wynik").text(dodaj);
+	});
+  $("#odejmij").click(function(){
+    var odejmij = l1-l2;
+    $("div.wynik").text(odejmij);
+	});
+  $("#mnoz").click(function(){
+    var mnoz = l1*l2;
+    $("div.wynik").text(mnoz);
+	});
+  $("#dziel").click(function(){
+    if(l2 != 0){
+    var dziel = l1/l2;
+  }
+    else{
+      window.alert("Nie dziel przez zero!");
+    }
+    $("div.wynik").text(dziel);
+	});
+});
+
+</script>
+</body>
+
+</html>
