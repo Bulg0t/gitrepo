@@ -15,6 +15,7 @@ public:
 	int zwrocMianownik() {
 		return m;
 	}
+	void drukuj();
 	bool set_l(int);
 	bool set_m(int);
 	int skroc(int , int );

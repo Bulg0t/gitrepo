@@ -26,11 +26,13 @@ bool Ulamek::set_m(int mi){
     }
 }
 bool Ulamek::set_lm(int li, int mi){
-	l = li;
-	return set_m(mi);
+	int q=skroc(li, mi);
+	l = li/q;
+	return set_m(mi/q);
 	}
-
-
+void Ulamek::drukuj() {
+    cout << l << "/" << m;
+}
 Ulamek::Ulamek(int li, int mi)
 { 
 	int q=skroc(li, mi);
@@ -40,10 +42,25 @@ Ulamek::Ulamek(int li, int mi)
 }
 
 int Ulamek::skroc(int p, int q)
-	{ int r;
-	if(p == 0) if(q == 0) return 1; else return q;
-	else if(q == 0) return p;
-	r = p % q;
-	while(r) { p = q; q = r; r = p % q; }
+	{ int i;
+	if(p == 0) if(q == 0) return 1; else return q; 
+	else if (q==0) return p;
+	i = p % q;
+	while(i) {
+		 p = q; 
+		 q = i; 
+		 i = p % q; 
+	}
 	return q;
 	}
+	
+/*int NWD_it2(int a, int b){
+	int i = 0;
+	while(b > 0){
+		i++;
+		a = b;
+		b = a%b;
+		}
+	return a;
+	}
+*/
