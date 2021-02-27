@@ -1,40 +1,38 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#
-#  stos.py
-
-stos = []
-SP = 0 # wskaźnik stosu - stack pointer.
-
-def push(rozmiar, dane):
-    global SP, stos
-    if SP < rozmiar:
-        stos[SP] = dane
-        SP += 1
-    else:
-        print("Stack overflow!")
-
-def pop(rozmiar):
-    global SP, stos
-    SP -= 1
-    if SP < rozmiar:
-        print(stos[SP])
-    else:
-        print("Stack overflow!")
+#  
+class Stack:
+	def __init__(self):
+		self.items = []
+	def view(self):
+		return self.items
+	def isEmpty(self):
+		return self.items ==[]
+	def push(self, item):
+		self.items.append(item)
+	def pop(self):
+		return self.items.pop()
+	def size(self):
+		return len(self.items)
 
 def main(args):
-    global SP, stos
-    rozmiar = 5
-    stos = [None] * rozmiar
-    push(rozmiar, 2)
-    push(rozmiar, 3)
-    push(rozmiar, 6)
-    print("Wskaźnik: ", SP)
-    pop(rozmiar)
-    pop(rozmiar)
-    pop(rozmiar)
-    
-    return 0
+	s=Stack()
+	print("Czy stos jest pusty? " + str(s.isEmpty()))
+	print("Dodaje trzy liczby do stosu: 1, 5, 15")
+	s.push(1)
+	s.push(5)
+	s.push(15)
+	print("Stos: "+str(s.view()))
+	print("Czy stos jest pusty? " + str(s.isEmpty()))
+	print ('Rozmiar: ' + str(s.size()))
+	print("Usuwam liczby z wierzchołka stosu: ")
+	print (s.pop())
+	print(s.pop())
+	print(s.pop())
+	print("Czy stos jest pusty? " + str(s.isEmpty()))
+	print("Rozmiar: " + str(s.size()))
+	
+	return 0
 
 if __name__ == '__main__':
     import sys
