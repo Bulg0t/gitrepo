@@ -41,26 +41,12 @@ Ulamek::Ulamek(int li, int mi)
 	m = mi/q;
 }
 
-int Ulamek::skroc(int p, int q)
-	{ int i;
-	if(p == 0) if(q == 0) return 1; else return q; 
-	else if (q==0) return p;
-	i = p % q;
-	while(i) {
-		 p = q; 
-		 q = i; 
-		 i = p % q; 
-	}
-	return q;
-	}
-	
-/*int NWD_it2(int a, int b){
-	int i = 0;
-	while(b > 0){
+int Ulamek::skroc(int li, int mi)
+	{ int i=0;
+	while (li > 0){
 		i++;
-		a = b;
-		b = a%b;
-		}
-	return a;
+		li = li%mi;
+		mi = mi-li;
 	}
-*/
+		return mi;
+	}
